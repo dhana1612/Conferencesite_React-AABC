@@ -7,6 +7,7 @@ export default function Main() {
   return (
    <>
     <Header />
+    
     <main>
         <Outlet></Outlet>
     </main>
