@@ -7,42 +7,80 @@ const committeeMembers = [
     role: "General Co-Chair",
     university: "Shanghai JiaoTong University",
     country: "China",
-    image: "https://via.placeholder.com/100", // Replace with actual image URL
+    image: "public/comm8.jpg",
   },
   {
     name: "Weisheng Zhao",
     role: "General Co-Chair",
     university: "Beihang University",
     country: "China",
-    image: "https://via.placeholder.com/100",
+    image: "public/comm8.jpg",
   },
   {
     name: "Mohd Sawan",
     role: "General Co-Chair",
     university: "Westlake University",
     country: "China",
-    image: "https://via.placeholder.com/100",
+    image: "public/comm8.jpg",
+  },
+];
+
+const committeeList = [
+  {
+    title: "General Co-Chairs",
+    members: [
+      "Yongfu Li, Shanghai Jiao Tong University, China",
+      "Weisheng Zhao, Beihang University, China",
+      "Mohd Sawan, Westlake University, China",
+    ],
   },
   {
-    name: "John Doe",
-    role: "Program Chair",
-    university: "MIT",
-    country: "USA",
-    image: "https://via.placeholder.com/100",
+    title: "Technical Program Co-Chairs",
+    members: [
+      "Chao Wang, Huazhong University of Science and Technology, China",
+      "Xinfei Guo, Shanghai Jiao Tong University, China",
+      "Xinmiao Zhang, Ohio State University, USA",
+      "Antonio Liscidini, University of Toronto, Canada",
+      "Alex James, Digital University Kerala, India",
+      "Arindam Basu, City University of Hong Kong, Hong Kong",
+      "Jae-Sun Seo, Cornell Tech, USA",
+    ],
   },
   {
-    name: "Jane Smith",
-    role: "Technical Chair",
-    university: "Stanford University",
-    country: "USA",
-    image: "https://via.placeholder.com/100",
+    title: "Financial Co-Chairs",
+    members: [
+      "Wei Mao, Xidian University, China",
+      "Kian Ann Ng, Singapore Institute of Technology, Singapore",
+    ],
   },
   {
-    name: "Ali Khan",
-    role: "Advisory Board",
-    university: "University of Tokyo",
-    country: "Japan",
-    image: "https://via.placeholder.com/100",
+    title: "Publicity Co-Chairs",
+    members: [
+      "Liang Qi, Shanghai Jiao Tong University, China",
+      "Sijun Du, Delft University of Technology, Netherlands",
+    ],
+  },
+  {
+    title: "Local Arrangement Co-Chairs",
+    members: [
+      "Deming Zhang, Beihang University, China",
+      "Yueting Li, Beihang University, China",
+    ],
+  },
+  {
+    title: "DEI Co-Chairs",
+    members: [
+      "Yanan Sun, Shanghai Jiao Tong University, China",
+      "Yuhang Zhang, East China Normal University, China",
+      "Yu Wu, University College London, China",
+    ],
+  },
+  {
+    title: "Sponsorship Co-Chairs",
+    members: [
+      "Xinsheng Wang, Harbin Institute of Technology, China",
+      "Wenning Jiang, Fudan University, China",
+    ],
   },
 ];
 
@@ -67,13 +105,27 @@ const FullCommittee = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {committeeMembers.map((member, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg p-6 flex items-center">
-              <img src={member.image} alt={member.name} className="w-20 h-20 rounded-full object-cover mr-4" />
+              <img src={member.image} alt={member.name} className="w-30 h-30 rounded-full object-cover mr-4" />
               <div>
                 <h3 className="text-lg font-semibold text-green-700">{member.name}</h3>
                 <p className="text-gray-600">{member.role}</p>
                 <p className="text-gray-500">{member.university}</p>
                 <p className="text-gray-500">{member.country}</p>
               </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Committee List Section */}
+        <div className="bg-white rounded-lg shadow-lg mt-10 p-6">
+          {committeeList.map((section, index) => (
+            <div key={index} className="mb-6 text-center">
+              <h3 className="text-lg font-bold text-green-700 mb-2">{section.title}</h3>
+              <ul className="text-gray-600">
+                {section.members.map((member, idx) => (
+                  <li key={idx} className="mb-1">{member}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
