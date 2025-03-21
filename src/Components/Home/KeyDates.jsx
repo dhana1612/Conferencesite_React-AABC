@@ -38,7 +38,7 @@ const KeyDates = () => {
 
   return (
     <div className="bg-gray-100 text-black py-10">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="w-full mx-auto text-center">
           <h2 className="text-2xl font-semibold text-green-700 mb-4">
             KEY DATES
           </h2>
@@ -46,7 +46,7 @@ const KeyDates = () => {
         </div>
 
       {/* Slider Container */}
-      <div className="max-w-5xl mx-auto px-4">
+      <div className="max-w-[65%] mx-auto px-4">
         <Slider {...settings}>
           {dates.map((item, index) => (
             <div key={index} className="px-2">

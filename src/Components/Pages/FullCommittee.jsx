@@ -99,7 +99,7 @@ const FullCommittee = () => {
         </nav>
 
         {/* Title */}
-        <h2 className="text-2xl font-bold text-green-700 mb-6">Organizing Committee</h2>
+        <h2 className="text-3xl font-bold text-green-700 mb-6">Organizing Committee</h2>
 
         {/* Committee Members Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

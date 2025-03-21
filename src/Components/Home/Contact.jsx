@@ -2,9 +2,7 @@ import { MapPin, Phone, Mail, Globe } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section className="bg-gray-100">
-
-   
+    <section className="bg-gray-100" id="contact">
     <div className=" py-12 px-6 md:px-20 w-full lg:w-[70%] mx-auto">
       {/* Heading with Underline */}
       <div className="max-w-6xl mx-auto text-center">

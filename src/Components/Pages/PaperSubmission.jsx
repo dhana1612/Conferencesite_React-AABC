@@ -1,67 +1,77 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function PaperSubmission() {
+    const navigate = useNavigate();
+  
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <section className="bg-gray-100 px-6 py-16">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-gray-800 text-center mb-12">
-          Paper Submission
-        </h2>
+        {/* Breadcrumb Navigation */}
+        <nav className="text-green-600 mb-4">
+          <span className="cursor-pointer hover:underline" onClick={() => navigate("/")}>
+            Home
+          </span>{" "}
+          / <span className="text-gray-700">Submit Your Paper Here</span>
+        </nav>
+
+         {/* Title */}
+         <h2 className="text-3xl font-bold text-green-700 mb-6">Paper Submission</h2>
 
         {/* Submission Guidelines */}
-        <h3 className="text-3xl font-semibold text-gray-900 mb-4">
+        <h3 className="text-2xl font-semibold text-gray-900 mb-4">
           Submission Guidelines
         </h3>
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          Authors are invited to submit **original, unpublished research papers** 
-          that demonstrate innovation and contribute to the advancement of 
-          knowledge in integrated circuits and systems. All submissions must 
+          Authors are invited to submit **original, unpublished research papers**
+          that demonstrate innovation and contribute to the advancement of
+          knowledge in integrated circuits and systems. All submissions must
           strictly adhere to the IEEE conference formatting requirements.
         </p>
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          Papers should be formatted in **IEEE double-column style**, using 
-          <strong>Times New Roman, 10pt font</strong>. The maximum length 
+          Papers should be formatted in **IEEE double-column style**, using
+          <strong>Times New Roman, 10pt font</strong>. The maximum length
           allowed is **6 pages**, including all references and appendices.
         </p>
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          Submissions should be in **PDF or DOCX format** and should not 
-          contain any author-identifying information to maintain **double-blind 
-          peer review** integrity. The review process will evaluate papers based 
-          on their originality, technical quality, relevance, and clarity of 
+          Submissions should be in **PDF or DOCX format** and should not
+          contain any author-identifying information to maintain **double-blind
+          peer review** integrity. The review process will evaluate papers based
+          on their originality, technical quality, relevance, and clarity of
           presentation.
         </p>
         <p className="text-gray-700 text-lg leading-relaxed mb-10">
-          Accepted papers will be presented at the conference and published in 
-          **IEEE Xplore**. Authors must register for the conference to present 
-          their work. Failure to present the paper may result in removal from 
+          Accepted papers will be presented at the conference and published in
+          **IEEE Xplore**. Authors must register for the conference to present
+          their work. Failure to present the paper may result in removal from
           the conference proceedings.
         </p>
 
         {/* Important Notes */}
-        <h3 className="text-3xl font-semibold text-gray-900 mb-4">
+        <h3 className="text-2xl font-semibold text-gray-900 mb-4">
           Important Notes
         </h3>
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          - <strong>Submission Deadline:</strong> All papers must be submitted 
-          by <strong>October 1, 2025</strong>. Late submissions will **not** be 
+          - <strong>Submission Deadline:</strong> All papers must be submitted
+          by <strong>October 1, 2025</strong>. Late submissions will **not** be
           accepted under any circumstances.
         </p>
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          - <strong>Plagiarism Policy:</strong> All submissions will be 
-          **checked for plagiarism** using IEEE-approved tools. Papers 
-          containing more than **20% similarity** with existing work will be 
+          - <strong>Plagiarism Policy:</strong> All submissions will be
+          **checked for plagiarism** using IEEE-approved tools. Papers
+          containing more than **20% similarity** with existing work will be
           **automatically rejected**.
         </p>
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          - <strong>Author Registration:</strong> At least one author must 
-          register for the conference by **October 15, 2025**, to be included 
+          - <strong>Author Registration:</strong> At least one author must
+          register for the conference by **October 15, 2025**, to be included
           in the final program and proceedings.
         </p>
         <p className="text-gray-700 text-lg leading-relaxed mb-12">
-          - <strong>Presentation Mode:</strong> Accepted papers must be 
-          presented in **person or virtually**. Authors unable to attend must 
+          - <strong>Presentation Mode:</strong> Accepted papers must be
+          presented in **person or virtually**. Authors unable to attend must
           notify the organizers in advance to arrange an alternative presentation.
         </p>
 

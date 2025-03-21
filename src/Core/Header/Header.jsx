@@ -85,8 +85,11 @@ export default function Header() {
                   <Link to="/welcome-message">Welcome Message</Link>
                 </li>
                 <li className="px-4 py-2 hover:bg-gray-200">
-                  <Link to="/new-release">New Release</Link>
+                  <Link to="/full-committee">Organizing Committee</Link>
                 </li>
+                {/* <li className="px-4 py-2 hover:bg-gray-200">
+                  <Link to="/speakers">Speakers</Link>
+                </li> */}
               </ul>
             )}
           </div>
@@ -110,76 +113,22 @@ export default function Header() {
                 onMouseLeave={handleMouseLeave}
               >
                 <li className="px-4 py-2 hover:bg-gray-200">
-                  <Link to="/call-for-paper">Call for Paper</Link>
+                  <Link to="/registration">Registration Details</Link>
                 </li>
                 <li className="px-4 py-2 hover:bg-gray-200">
-                  <Link to="/paper-submission">Paper Submission</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-200">
-                  <Link to="/presentation">Presentation</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-200">
-                  <Link to="/guidelines">Guidelines</Link>
-                </li>
-              </ul>
-            )}
-          </div>
-
-          {/* List of Committee Dropdown */}
-          <div
-            className="relative group"
-            onMouseEnter={() => handleMouseEnter("List of Committee")}
-            onMouseLeave={handleMouseLeave}
-          >
-            <button
-              onClick={() => toggleDropdown("List of Committee")}
-              className="flex items-center hover:text-gray-300 transition text-lg"
-            >
-              List of Committee <ChevronDown className="ml-1 w-4 h-4" />
-            </button>
-            {dropdownOpen === "List of Committee" && (
-              <ul
-                className="absolute left-0 mt-2 bg-white text-black shadow-md rounded-md py-2 w-64 z-50"
-                onMouseEnter={() => handleMouseEnter("List of Committee")}
-                onMouseLeave={handleMouseLeave}
-              >
-                <li className="px-4 py-2 hover:bg-gray-200">
-                  <Link to="/organizing-committee">Organizing Committee</Link>
+                  <Link to="/paper-submit">Paper Submission</Link>
                 </li>
               </ul>
             )}
           </div>
 
           {/* Contact Dropdown */}
-          <div
-            className="relative group"
-            onMouseEnter={() => handleMouseEnter("Contact")}
-            onMouseLeave={handleMouseLeave}
+          <Link
+            to="/contact"
+            className="hover:text-gray-300 transition text-lg"
           >
-            <button
-              onClick={() => toggleDropdown("Contact")}
-              className="flex items-center hover:text-gray-300 transition text-lg"
-            >
-              Contact <ChevronDown className="ml-1 w-4 h-4" />
-            </button>
-            {dropdownOpen === "Contact" && (
-              <ul
-                className="absolute left-0 mt-2 bg-white text-black shadow-md rounded-md py-2 w-64 z-50"
-                onMouseEnter={() => handleMouseEnter("Contact")}
-                onMouseLeave={handleMouseLeave}
-              >
-                <li className="px-4 py-2 hover:bg-gray-200">
-                  <Link to="/conference-venue">Conference Venue</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-200">
-                  <Link to="/accommodation">Accommodation</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-200">
-                  <Link to="/transportation">Transportation</Link>
-                </li>
-              </ul>
-            )}
-          </div>
+            Contact
+          </Link>
 
           {/* Registration Button */}
           <Link

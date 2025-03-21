@@ -16,7 +16,7 @@ const WelcomeMessage = () => {
         </nav>
 
         {/* Title */}
-        <h2 className="text-2xl font-bold text-green-700 mb-6">
+        <h2 className="text-3xl font-bold text-green-700 mb-6">
           Welcome Message from General Chairs
         </h2>
 
