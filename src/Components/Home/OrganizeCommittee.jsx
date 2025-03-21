@@ -29,7 +29,7 @@ const OrganizingCommittee = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="bg-gray-100 py-10">
+    <section className="py-10">
       <div className="w-full xl:w-[90%] 2xl:w-[65%] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-2xl font-semibold text-green-700 mb-4">

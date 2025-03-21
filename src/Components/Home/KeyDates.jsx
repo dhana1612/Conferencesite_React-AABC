@@ -1,52 +1,65 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-export default function KeyDates() {
-  const keyDates = [
-    { date: "June 15, 2025", event: "Paper Submission Deadline" },
-    { date: "August 1, 2025", event: "Notification of Acceptance" },
-    { date: "September 10, 2025", event: "Camera-Ready Submission" },
-    { date: "October 1, 2025", event: "Early Registration Deadline" },
-    { date: "October 24-26, 2025", event: "Conference Dates" },
+const KeyDates = () => {
+  const dates = [
+    { date: "OCTOBER 28, 2024", description: "Paper Submission Deadline – Final Extension" },
+    { date: "JANUARY 20, 2025", description: "Author Acceptance Notification Description" },
+    { date: "FEBRUARY 10, 2025", description: "Final Manuscript Submission Deadline" },
   ];
 
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 1024, // For tablets and smaller desktops
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768, // For mobile devices
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <section className="bg-gray-100 px-5 py-10 overflow-hidden">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">
-          Key Dates
-        </h2>
-
-        {/* Smooth Scrolling Container */}
-        <div className="relative w-full overflow-hidden">
-          <div className="flex space-x-10 animate-marquee">
-            {[...keyDates, ...keyDates].map((item, index) => ( // Duplicating list for seamless looping
-              <div
-                key={index}
-                className="flex-shrink-0 bg-white shadow-lg px-6 py-4 rounded-lg border border-gray-200 w-64 text-center"
-              >
-                <p className="text-green-700 font-semibold text-lg">{item.date}</p>
-                <p className="text-gray-800 text-xl font-medium">{item.event}</p>
-              </div>
-            ))}
-          </div>
+    <div className="bg-gray-100 text-black py-10">
+      <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-2xl font-semibold text-green-700 mb-4">
+            KEY DATES
+          </h2>
+          <div className="border-t-2 border-green-700 w-16 mx-auto mb-8"></div>
         </div>
+
+      {/* Slider Container */}
+      <div className="max-w-5xl mx-auto px-4">
+        <Slider {...settings}>
+          {dates.map((item, index) => (
+            <div key={index} className="px-2">
+              <div className="bg-white text-black p-6 rounded-2xl shadow-md text-center h-full">
+                <h3 className="font-bold text-green-700 text-lg">{item.date}</h3>
+                <p className="mt-2 text-sm sm:text-base">{item.description}</p>
+              </div>
+            </div>
+          ))}
+        </Slider>
       </div>
-
-      {/* Tailwind CSS Animation for Continuous Scrolling */}
-      <style>
-        {`
-          @keyframes marquee {
-            from { transform: translateX(0); }
-            to { transform: translateX(-50%); } /* Moves half because of duplication */
-          }
-
-          .animate-marquee {
-            display: flex;
-            animation: marquee 15s linear infinite;
-            width: max-content;
-          }
-        `}
-      </style>
-    </section>
+    </div>
   );
-}
+};
+
+export default KeyDates;

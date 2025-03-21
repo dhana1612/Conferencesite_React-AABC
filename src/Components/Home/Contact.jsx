@@ -2,7 +2,10 @@ import { MapPin, Phone, Mail, Globe } from "lucide-react";
 
 export default function Contact() {
   return (
-    <div className="bg-white py-12 px-6 md:px-20 w-full lg:w-[70%] mx-auto">
+    <section className="bg-gray-100">
+
+   
+    <div className=" py-12 px-6 md:px-20 w-full lg:w-[70%] mx-auto">
       {/* Heading with Underline */}
       <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-2xl font-semibold text-green-700 mb-4">
@@ -83,5 +86,6 @@ export default function Contact() {
         </div>
       </div>
     </div>
+    </section>
   );
 }

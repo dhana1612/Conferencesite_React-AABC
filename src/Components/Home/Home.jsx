@@ -3,14 +3,14 @@ import OrganizingCommittee from './OrganizeCommittee'
 import HeroSection from '../Home/HeroSection'
 import Contact from './Contact'
 import KeyDates from './KeyDates'
-import Speakers from './Speaker'
+// import Speakers from './Speaker'
 
 export default function Home() {
   return (
     <div>
       <HeroSection/>
       <KeyDates />
-      <Speakers/>
+      {/* <Speakers/> */}
       <OrganizingCommittee />
       <Contact />
     </div>
