@@ -11,7 +11,6 @@ export default function Header() {
 
   const dropdownItems = {
     "About": ["Welcome Message", "New Release"],
-    "Program": ["Program At a Glance", "Student Design Competition", "Predoctoral Forum", "WiCAs-YP Program"],
     "Authors": ["Call for Paper", "Paper Submission", "Presentation", "Guidelines"],
     "List of Committee": ["Organizing Committee"],
     "Contact": ["Conference Venue", "Accommodation", "Transportation"],

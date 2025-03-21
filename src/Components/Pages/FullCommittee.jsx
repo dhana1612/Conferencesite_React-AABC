@@ -7,21 +7,21 @@ const committeeMembers = [
     role: "General Co-Chair",
     university: "Shanghai JiaoTong University",
     country: "China",
-    image: "public/comm8.jpg",
+    image: "/comm8.jpg",
   },
   {
     name: "Weisheng Zhao",
     role: "General Co-Chair",
     university: "Beihang University",
     country: "China",
-    image: "public/comm8.jpg",
+    image: "/comm8.jpg",
   },
   {
     name: "Mohd Sawan",
     role: "General Co-Chair",
     university: "Westlake University",
     country: "China",
-    image: "public/comm8.jpg",
+    image: "/comm8.jpg",
   },
 ];
 
