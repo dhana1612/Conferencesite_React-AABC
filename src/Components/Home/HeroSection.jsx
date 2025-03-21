@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 
 export default function HeroSection() {
+  const navigate = useNavigate();
+
   return (
     <section className="bg-green-700 px-5">
       <div className="max-w-7xl mx-auto flex flex-col items-center py-10">
@@ -14,7 +17,9 @@ export default function HeroSection() {
               October 24-26, 2025, Qingdao, China <br />
               Venue in the Heart of Qingdao (Hyatt Regency)
             </p>
-            <button className="border border-white px-6 py-3 rounded-full text-white bg-green-300 hover:bg-green-700 transition text-lg md:text-xl">
+            <button 
+             onClick={() => navigate("/welcome-message")}
+            className="border border-white px-6 py-3 rounded-full text-white bg-green-500 hover:bg-green-700 transition text-lg md:text-xl">
               Welcome Message
             </button>
           </div>
