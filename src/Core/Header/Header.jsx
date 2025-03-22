@@ -49,8 +49,9 @@ export default function Header() {
       <div className="flex justify-between items-center max-w-[1300px] w-full mx-auto px-6">
         {/* Logo */}
         <div className="flex items-center gap-4">
-          <img src="/logo.png" alt="ISICAS 2025" className="h-10" />
-          <span className="text-2xl font-semibold">ISICAS</span>
+          <Link to="/">
+          <img src="img/logo.png" alt="ISICAS 2025" className="h-15" />
+          </Link>
         </div>
 
         {/* Mobile Menu Button (Only visible on md and below) */}
@@ -63,6 +64,15 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex md:items-center md:space-x-8">
+
+          {/* Contact */}
+          <Link
+            to="/"
+            className="hover:text-gray-300 transition text-lg"
+          >
+            Home
+          </Link>
+
           {/* About Dropdown */}
           <div
             className="relative group"
@@ -122,7 +132,7 @@ export default function Header() {
             )}
           </div>
 
-          {/* Contact Dropdown */}
+          {/* Contact */}
           <Link
             to="/contact"
             className="hover:text-gray-300 transition text-lg"
