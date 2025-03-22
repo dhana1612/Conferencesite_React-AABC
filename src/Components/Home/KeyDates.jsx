@@ -37,7 +37,7 @@ const KeyDates = () => {
   };
 
   return (
-    <div className="bg-gray-100 text-black py-10">
+    <div className="bg-gray-100 text-black py-17">
       <div className="w-full mx-auto text-center">
           <h2 className="text-3xl font-semibold text-green-700 mb-4">
             KEY DATES
@@ -57,7 +57,7 @@ const KeyDates = () => {
             </div>
           ))}
         </Slider>
-      </div>
+      </div>  
     </div>
   );
 };

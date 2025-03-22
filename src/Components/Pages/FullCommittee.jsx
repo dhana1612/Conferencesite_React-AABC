@@ -89,7 +89,7 @@ const FullCommittee = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen py-10">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-[65%] mx-auto px-4">
         {/* Breadcrumb Navigation */}
         <nav className="text-green-600 mb-4">
           <span className="cursor-pointer hover:underline" onClick={() => navigate("/")}>
@@ -108,7 +108,7 @@ const FullCommittee = () => {
               <img src={member.image} alt={member.name} className="w-30 h-30 rounded-full object-cover mr-4" />
               <div>
                 <h3 className="text-lg font-semibold text-green-700">{member.name}</h3>
-                <p className="text-gray-600">{member.role}</p>
+                <p className="">{member.role}</p>
                 <p className="text-gray-500">{member.university}</p>
                 <p className="text-gray-500">{member.country}</p>
               </div>
@@ -120,8 +120,8 @@ const FullCommittee = () => {
         <div className="bg-white rounded-lg shadow-lg mt-10 p-6">
           {committeeList.map((section, index) => (
             <div key={index} className="mb-6 text-center">
-              <h3 className="text-lg font-bold text-green-700 mb-2">{section.title}</h3>
-              <ul className="text-gray-600">
+              <h3 className="text-xl font-semibold text-green-700 mb-2">{section.title}</h3>
+              <ul className="text-gray-600 text-lg">
                 {section.members.map((member, idx) => (
                   <li key={idx} className="mb-1">{member}</li>
                 ))}
@@ -134,9 +134,9 @@ const FullCommittee = () => {
         <div className="text-center mt-8">
           <button
             onClick={() => navigate(-1)}
-            className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
+            className="px-4 py-2 bg-green-700 text-white rounded-sm hover:bg-green-600 text-lg"
           >
-            Back
+            Back to Home
           </button>
         </div>
       </div>
