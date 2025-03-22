@@ -6,7 +6,7 @@ const WelcomeMessage = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen py-12">
-      <div className="max-w-[65%] mx-auto px-4">
+      <div className="w-full lg:w-[65%] mx-auto px-4">
         {/* Breadcrumb Navigation */}
         <nav className="text-green-600 mb-4">
           <span className="cursor-pointer hover:underline" onClick={() => navigate("/")}>

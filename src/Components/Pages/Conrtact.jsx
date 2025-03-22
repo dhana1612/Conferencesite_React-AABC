@@ -30,7 +30,7 @@ export default function Contact() {
 
     return (
         <section className="bg-gray-100" id="contact">
-            <div className="py-12 px-6 md:px-20 w-full lg:w-[70%] mx-auto">
+            <div className="py-12 px-6 md:px-20 w-full xl:w-[70%] mx-auto">
                 {/* Breadcrumb Navigation */}
                 <nav className="text-green-600 mb-4">
                     <span className="cursor-pointer hover:underline" onClick={() => navigate("/")}>
