@@ -23,43 +23,36 @@ const WelcomeMessage = () => {
         {/* Message Box */}
         <div className="bg-white rounded-lg shadow-lg p-6">
           <p className="text-gray-700 leading-7 mb-4">
-            Dear Colleagues and Friends,
+            Dear <span className="font-semibold">Colleagues and Friends</span>,
           </p>
           <p className="text-gray-700 leading-7 mb-4">
-            We are delighted to extend a cordial invitation to you for the 2025 IEEE International Symposium on Integrated Circuits and Systems (ISICAS 2025). This prestigious event will be held from <strong>October 24th to 26th, 2025</strong>, at the Hyatt Regency Hotel in the vibrant coastal city of Qingdao, China.
+            We are pleased to invite you to the <span className="font-semibold">2025 International Conference on Advances in AI, Business Analytics, and Cloud Systems (AABC 2025)</span>. This prestigious event will take place from <span className="font-semibold">November 15th to 17th, 2025</span>, at the <span className="font-semibold">Grand Marina Bay Hotel</span> in the dynamic city of <span className="font-semibold">Singapore</span>.
           </p>
           <p className="text-gray-700 leading-7 mb-4">
-            Qingdao, a city with a population of approximately 10 million, is not only a highlight of Shandong Province but also a significant hub for the IC and electronics industry, home to more than 3600 companies including Haier, Hisense, and GoerTek. We are honored to have received support from many of these leading companies for ISICAS 2025.
+            <span className="font-semibold">Singapore</span>, a global hub for technology and innovation, is home to a thriving ecosystem of <span className="font-semibold">AI research, business intelligence, and cloud computing</span>. With world-class infrastructure and a vibrant tech community, it serves as the perfect venue for <span className="font-semibold">AABC 2025</span>.
           </p>
           <p className="text-gray-700 leading-7 mb-4">
-            Shandong Province, with a population of over 100 million, is a cradle of Chinese civilization and a center of economic growth, contributing significantly to China's development with a GDP of CNY 92068.7 billion in 2023, showing a robust 6% growth. Qingdao, as the economic powerhouse of the province, boasts a GDP of CNY 7978.67 billion in the first half of 2024, reflecting a strong 5.8% growth.
+            The theme of <span className="font-semibold">AABC 2025</span>, <span className="font-semibold">"Harnessing AI, Business Analytics, and Cloud Systems for Digital Transformation"</span>, will explore cutting-edge advancements in <span className="font-semibold">artificial intelligence, data-driven decision-making, and cloud technologies</span> that are reshaping industries worldwide.
           </p>
           <p className="text-gray-700 leading-7 mb-4">
-            The city is renowned for its Tsingtao Beer and the International Beer Festival, which adds to its vibrant cultural scene. Its coastal scenery, beautiful parks, and historic German architecture make it a popular destination for travelers and a delightful setting for our symposium.
+            We invite <span className="font-semibold">researchers, industry leaders, and professionals</span> from academia, corporations, and government agencies to submit their latest work and engage in insightful discussions on <span className="font-semibold">AI-powered analytics, cloud-driven business solutions, and transformative applications</span>.
           </p>
           <p className="text-gray-700 leading-7 mb-4">
-            The theme for ISICAS 2025 will focus on the latest advancements in integrated circuits and systems, with the theme <strong>"Advances in Integrated Circuits and Systems: Bridging the Gap between Design and Implementation"</strong>. We encourage submissions that provide experimental results and insights into current trends and challenges in the field.
+            Authors will have the opportunity to publish in special issues of leading journals, including <span className="font-semibold">IEEE Transactions on Artificial Intelligence, Journal of Business Analytics, and Cloud Computing Advances</span>. We also encourage submissions of extended versions of recently published conference papers with significant new contributions.
           </p>
           <p className="text-gray-700 leading-7 mb-4">
-            Researchers, engineers, and students from academia, industry, and government agencies are invited to share their latest work and engage in fruitful discussions on integrated circuits and systems implementations. We anticipate a gathering of professionals and scholars from around the world, ensuring a meaningful and enriching experience for all attendees.
+            Your participation will be invaluable in making <span className="font-semibold">AABC 2025</span> a landmark event for the <span className="font-semibold">AI, business analytics, and cloud computing communities</span>. We extend our heartfelt gratitude to the <span className="font-semibold">organizing committee and sponsors</span> for their commitment to making this conference a success.
           </p>
           <p className="text-gray-700 leading-7 mb-4">
-            Authors will need to submit their articles and being accepted in the special issues/sections of TCAS-I, TCAS-II, TBioCAS, and OJCAS. It is the first time that we are in the process of inviting the IEEE Transactions on Very Large-Scale Integration (TVLSI) and the new IEEE Transactions on Circuits and Systems for Artificial Intelligence (TCASAI) to participate in this event. We also welcome extended versions of recent conference papers that contain significant additional material.
-          </p>
-          <p className="text-gray-700 leading-7 mb-4">
-            Your participation is invaluable, and we are confident that ISICAS 2025 will be a memorable and productive event. We would like to express our sincere gratitude to the members of the ISICAS 2025 Organizing Committee for their dedication and hard work in making this symposium a success.
-          </p>
-          <p className="text-gray-700 leading-7 mb-4">
-            We look forward to seeing you in Qingdao, where we will enjoy not only excellent weather but also a symposium filled with intellectual and cultural experiences.
+            We look forward to welcoming you to <span className="font-semibold">Singapore</span>, where we will experience not only a world-class conference but also the vibrant culture and innovation-driven spirit of the city.
           </p>
 
           {/* Signature */}
           <p className="font-semibold text-gray-900 mt-6">
-            Yongfu Li, Weisheng Zhao, and Mohamad Sawan
+            <span className="font-bold">Dr. Rajesh Kumar, Dr. Emily Chen, and Dr. Ahmed Al-Farsi</span>
           </p>
-          <p className="font-semibold text-gray-700">General Co-Chairs, ISICAS 2025</p>
+          <p className="font-semibold text-gray-700">General Co-Chairs, <span className="font-semibold">AABC 2025</span></p>
         </div>
-
         {/* Back Button */}
         <div className="text-center mt-8">
           <button

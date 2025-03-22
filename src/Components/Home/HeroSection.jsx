@@ -11,7 +11,7 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="text-center lg:text-left">
             <h1 className="text-white font-bold py-5 text-[clamp(2rem,4vw,3rem)]">
-              IEEE International Symposium on Integrated Circuits and Systems
+            International Conference on Advances in AI, Business Analytics, and Cloud Systems (AABC) 2025
             </h1>
             <p className="text-white text-[clamp(1rem,2vw,1.25rem)] pb-5 leading-relaxed">
               October 24-26, 2025, Qingdao, China <br />

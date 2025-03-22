@@ -39,7 +39,7 @@ const KeyDates = () => {
   return (
     <div className="bg-gray-100 text-black py-10">
       <div className="w-full mx-auto text-center">
-          <h2 className="text-2xl font-semibold text-green-700 mb-4">
+          <h2 className="text-3xl font-semibold text-green-700 mb-4">
             KEY DATES
           </h2>
           <div className="border-t-2 border-green-700 w-16 mx-auto mb-8"></div>
@@ -51,7 +51,7 @@ const KeyDates = () => {
           {dates.map((item, index) => (
             <div key={index} className="px-2">
               <div className="bg-white text-black p-6 rounded-2xl shadow-md text-center h-full">
-                <h3 className="font-bold text-green-700 text-lg">{item.date}</h3>
+                <h3 className="text-xl font-semibold text-green-700">{item.date}</h3>
                 <p className="mt-2 text-lg sm:text-base">{item.description}</p>
               </div>
             </div>
