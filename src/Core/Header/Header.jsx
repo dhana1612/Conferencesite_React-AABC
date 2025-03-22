@@ -65,7 +65,7 @@ export default function Header() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex md:items-center md:space-x-8">
 
-          {/* Contact */}
+          {/* Home */}
           <Link
             to="/"
             className="hover:text-gray-300 transition text-lg"

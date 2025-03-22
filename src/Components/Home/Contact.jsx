@@ -20,7 +20,7 @@ export default function Contact() {
             <h3 className="text-xl font-semibold text-green-700 flex items-center">
               <Globe className="mr-2 text-green-500" /> About Arrow Thought
             </h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-lg">
               The Hyatt Regency brand is a global collection of hotels and resorts found in more
               than 200 locations across 40+ countries. A place where everyone is welcome and anything is possible.
             </p>
@@ -31,14 +31,14 @@ export default function Contact() {
             <h3 className="text-lg font-semibold text-green-700 flex items-center">
               <MapPin className="mr-2 text-green-500" /> Location
             </h3>
-            <p className="text-gray-600">Hyatt Regency, 88 Donghai East Road, Qingdao, China, 266061</p>
+            <p className="text-gray-600 text-lg">Hyatt Regency, 88 Donghai East Road, Qingdao, China, 266061</p>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold text-green-700 flex items-center">
               <Phone className="mr-2 text-green-500" /> Call
             </h3>
-            <p className="text-gray-600">+86 53286121234</p>
+            <p className="text-gray-600 text-lg">+86 53286121234</p>
           </div>
 
           {/* Google Map */}
@@ -58,7 +58,7 @@ export default function Contact() {
             <h3 className="text-xl font-semibold text-green-700 flex items-center">
               <Globe className="mr-2 text-green-500" /> Visa Requirement
             </h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-lg">
               Multiple policies help foreigners enter China. If your country is in the 
               <a href="#" className="text-green-500 font-semibold"> list of agreements</a> for visa exemption, 
               you don't need a visa. Otherwise, check <a href="#" className="text-green-500 font-semibold">this link</a>.
@@ -69,7 +69,7 @@ export default function Contact() {
             <h3 className="text-lg font-semibold text-green-700 flex items-center">
               <Globe className="mr-2 text-green-500" /> Transportation
             </h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-lg">
               Qingdao has an efficient public transport system. Learn more via
               <a href="#" className="text-green-500 font-semibold"> this link</a>.
             </p>
@@ -79,7 +79,7 @@ export default function Contact() {
             <h3 className="text-lg font-semibold text-green-700 flex items-center">
               <Mail className="mr-2 text-green-500" /> Inquiry Email
             </h3>
-            <p className="text-gray-600">isicas2025@outlook.com</p>
+            <p className="text-gray-600 text-lg">isicas2025@outlook.com</p>
           </div>
         </div>
       </div>

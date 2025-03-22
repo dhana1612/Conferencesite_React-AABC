@@ -52,7 +52,7 @@ const KeyDates = () => {
             <div key={index} className="px-2">
               <div className="bg-white text-black p-6 rounded-2xl shadow-md text-center h-full">
                 <h3 className="font-bold text-green-700 text-lg">{item.date}</h3>
-                <p className="mt-2 text-sm sm:text-base">{item.description}</p>
+                <p className="mt-2 text-lg sm:text-base">{item.description}</p>
               </div>
             </div>
           ))}
