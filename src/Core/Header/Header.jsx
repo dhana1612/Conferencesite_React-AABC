@@ -42,15 +42,14 @@ export default function Header() {
 
   return (
     <nav
-      className={`${
-        isScrolled ? "bg-[#3A6A4A] shadow-md" : "bg-[#528F62]"
-      } text-white py-5 flex justify-center items-center sticky top-0 z-50 transition-colors duration-300`}
+      className={`${isScrolled ? "bg-[#3A6A4A] shadow-md" : "bg-[#528F62]"
+        } text-white py-5 flex justify-center items-center sticky top-0 z-50 transition-colors duration-300`}
     >
       <div className="flex justify-between items-center max-w-[1300px] w-full mx-auto px-6">
         {/* Logo */}
         <div className="flex items-center gap-4">
           <Link to="/">
-          <img src="img/logo.png" alt="ISICAS 2025" className="h-15" />
+            <img src="img/logo.png" alt="ISICAS 2025" className="h-15" />
           </Link>
         </div>
 
@@ -97,9 +96,6 @@ export default function Header() {
                 <li className="px-4 py-2 hover:bg-gray-200">
                   <Link to="/full-committee">Organizing Committee</Link>
                 </li>
-                {/* <li className="px-4 py-2 hover:bg-gray-200">
-                  <Link to="/speakers">Speakers</Link>
-                </li> */}
               </ul>
             )}
           </div>
@@ -151,9 +147,8 @@ export default function Header() {
 
         {/* Mobile Sliding Menu */}
         <div
-          className={`fixed top-0 left-0 h-full w-64 bg-green-800 text-white flex flex-col items-center justify-center transition-transform transform ${
-            menuOpen ? "translate-x-0" : "-translate-x-full"
-          } md:hidden`}
+          className={`fixed top-0 right-0 h-[50%] w-64 bg-green-800 text-white flex flex-col items-center justify-center transition-transform transform ${menuOpen ? "translate-x-0" : "translate-x-full"
+            } md:hidden`}
         >
           {/* Close Button */}
           <button
@@ -164,6 +159,15 @@ export default function Header() {
           </button>
 
           <ul className="flex flex-col space-y-6 text-lg">
+
+            {/* Home */}
+            <Link
+              to="/"
+              className="hover:text-gray-300 transition text-lg"
+            >
+              Home
+            </Link>
+
             {/* About Dropdown (Mobile) */}
             <li className="relative">
               <button
@@ -178,7 +182,7 @@ export default function Header() {
                     <Link to="/welcome-message">Welcome Message</Link>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-200">
-                    <Link to="/new-release">New Release</Link>
+                    <Link to="/full-committee">Organizing Committee</Link>
                   </li>
                 </ul>
               )}
@@ -195,60 +199,22 @@ export default function Header() {
               {dropdownOpen === "Authors" && (
                 <ul className="absolute left-0 mt-2 bg-white text-black shadow-md rounded-md py-2 w-64">
                   <li className="px-4 py-2 hover:bg-gray-200">
-                    <Link to="/call-for-paper">Call for Paper</Link>
+                    <Link to="/registration">Registration Details</Link>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-200">
-                    <Link to="/paper-submission">Paper Submission</Link>
-                  </li>
-                  <li className="px-4 py-2 hover:bg-gray-200">
-                    <Link to="/presentation">Presentation</Link>
-                  </li>
-                  <li className="px-4 py-2 hover:bg-gray-200">
-                    <Link to="/guidelines">Guidelines</Link>
-                  </li>
-                </ul>
-              )}
-            </li>
-
-            {/* List of Committee Dropdown (Mobile) */}
-            <li className="relative">
-              <button
-                onClick={() => toggleDropdown("List of Committee")}
-                className="flex items-center hover:text-gray-300 transition"
-              >
-                List of Committee <ChevronDown className="ml-1 w-4 h-4" />
-              </button>
-              {dropdownOpen === "List of Committee" && (
-                <ul className="absolute left-0 mt-2 bg-white text-black shadow-md rounded-md py-2 w-64">
-                  <li className="px-4 py-2 hover:bg-gray-200">
-                    <Link to="/organizing-committee">Organizing Committee</Link>
+                    <Link to="/paper-submit">Paper Submission</Link>
                   </li>
                 </ul>
               )}
             </li>
 
             {/* Contact Dropdown (Mobile) */}
-            <li className="relative">
-              <button
-                onClick={() => toggleDropdown("Contact")}
-                className="flex items-center hover:text-gray-300 transition"
-              >
-                Contact <ChevronDown className="ml-1 w-4 h-4" />
-              </button>
-              {dropdownOpen === "Contact" && (
-                <ul className="absolute left-0 mt-2 bg-white text-black shadow-md rounded-md py-2 w-64">
-                  <li className="px-4 py-2 hover:bg-gray-200">
-                    <Link to="/conference-venue">Conference Venue</Link>
-                  </li>
-                  <li className="px-4 py-2 hover:bg-gray-200">
-                    <Link to="/accommodation">Accommodation</Link>
-                  </li>
-                  <li className="px-4 py-2 hover:bg-gray-200">
-                    <Link to="/transportation">Transportation</Link>
-                  </li>
-                </ul>
-              )}
-            </li>
+            <Link
+              to="/contact"
+              className="hover:text-gray-300 transition text-lg"
+            >
+              Contact
+            </Link>
           </ul>
 
           {/* Registration Button (Mobile) */}

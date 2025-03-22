@@ -14,8 +14,8 @@ export default function HeroSection() {
             International Conference on Advances in AI, Business Analytics, and Cloud Systems (AABC) 2025
             </h1>
             <p className="text-white text-[clamp(1rem,2vw,1.25rem)] pb-5 leading-relaxed">
-              October 24-26, 2025, Qingdao, China <br />
-              Venue in the Heart of Qingdao (Hyatt Regency)
+            October 24-26, 2025, Tokyo, Japan <br />
+            Venue: Tokyo International Forum, Chiyoda City
             </p>
             <button 
              onClick={() => navigate("/welcome-message")}
