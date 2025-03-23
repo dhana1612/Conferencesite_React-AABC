@@ -19,7 +19,7 @@ export default function HeroSection() {
             </p>
             <button 
              onClick={() => navigate("/welcome-message")}
-            className="border border-white px-6 py-3 rounded-full text-white bg-green-500 hover:bg-green-700 transition text-lg md:text-xl">
+            className="border border-white px-6 py-3 rounded-full text-white hover:bg-green-700 transition text-lg md:text-xl">
               Welcome Message
             </button>
           </div>

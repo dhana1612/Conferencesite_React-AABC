@@ -139,7 +139,7 @@ export default function Header() {
           {/* Registration Button */}
           <Link
             to="/paper-submit"
-            className="border border-white px-6 py-2 rounded-full hover:bg-green-300 transition text-lg"
+            className="border border-white px-6 py-2 rounded-full hover:bg-green-700 transition text-lg"
           >
             Registration
           </Link>

@@ -48,7 +48,7 @@ export default function RegistrationDetails() {
   };
 
   return (
-    <section className="bg-gray-100 px-6 py-16">
+    <section className="bg-gray-100 px-6 py-10">
       <div className="max-w-6xl mx-auto">
         {/* Breadcrumb Navigation */}
         <nav className="text-green-600 mb-4">
@@ -106,136 +106,6 @@ export default function RegistrationDetails() {
           </div>
         </div>
 
-        {/* Register Now Button */}
-        <div className="text-center">
-          <button
-            onClick={() => setIsModalOpen(true)}
-            className="bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-md hover:bg-green-800 transition-transform transform hover:scale-105"
-          >
-            Register Now
-          </button>
-        </div>
-
-        {/* Registration Form Modal */}
-        {isModalOpen && (
-          <div className="fixed inset-0 backdrop-blur-sm flex justify-center items-start p-4 pt-16">
-            <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-lg relative overflow-y-auto max-h-[80vh] mt-16">
-              <h2 className="text-3xl font-bold text-gray-800 text-center mb-6">
-                Registration Form
-              </h2>
-              <form className="space-y-5" onSubmit={handleSubmit}>
-                <div>
-                  <label className="block text-gray-700 font-semibold">
-                    Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    name="fullName"
-                    value={formData.fullName}
-                    onChange={handleChange}
-                    className="w-full border border-gray-300 rounded-lg p-3"
-                    required
-                  />
-                  {errors.fullName && (
-                    <p className="text-red-600 text-sm mt-1">{errors.fullName}</p>
-                  )}
-                </div>
-
-                <div>
-                  <label className="block text-gray-700 font-semibold">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full border border-gray-300 rounded-lg p-3"
-                    required
-                  />
-                  {errors.email && (
-                    <p className="text-red-600 text-sm mt-1">{errors.email}</p>
-                  )}
-                </div>
-
-                <div>
-                  <label className="block text-gray-700 font-semibold">
-                    Institution *
-                  </label>
-                  <input
-                    type="text"
-                    name="institution"
-                    value={formData.institution}
-                    onChange={handleChange}
-                    className="w-full border border-gray-300 rounded-lg p-3"
-                    required
-                  />
-                  {errors.institution && (
-                    <p className="text-red-600 text-sm mt-1">{errors.institution}</p>
-                  )}
-                </div>
-
-                <div>
-                  <label className="block text-gray-700 font-semibold">
-                    Category *
-                  </label>
-                  <select
-                    name="category"
-                    value={formData.category}
-                    onChange={handleChange}
-                    className="w-full border border-gray-300 rounded-lg p-3"
-                    required
-                  >
-                    <option value="">-- Select Category --</option>
-                    <option value="Student">Student</option>
-                    <option value="Faculty">Faculty</option>
-                    <option value="Industry">Industry</option>
-                  </select>
-                  {errors.category && (
-                    <p className="text-red-600 text-sm mt-1">{errors.category}</p>
-                  )}
-                </div>
-
-                <div>
-                  <label className="block text-gray-700 font-semibold">
-                    Payment Method *
-                  </label>
-                  <select
-                    name="paymentMethod"
-                    value={formData.paymentMethod}
-                    onChange={handleChange}
-                    className="w-full border border-gray-300 rounded-lg p-3"
-                    required
-                  >
-                    <option value="">-- Select Payment Method --</option>
-                    <option value="Credit Card">Credit Card</option>
-                    <option value="Bank Transfer">Bank Transfer</option>
-                    <option value="PayPal">PayPal</option>
-                  </select>
-                  {errors.paymentMethod && (
-                    <p className="text-red-600 text-sm mt-1">{errors.paymentMethod}</p>
-                  )}
-                </div>
-
-                <div className="flex flex-col md:flex-row justify-between items-center gap-3 mt-6">
-                  <button
-                    type="submit"
-                    className="w-full md:w-auto bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition"
-                  >
-                    Submit Registration
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setIsModalOpen(false)}
-                    className="w-full md:w-auto text-red-600 font-semibold px-8 py-3 border border-red-600 rounded-lg hover:bg-red-600 hover:text-white transition"
-                  >
-                    Close
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        )}
       </div>
     </section>
   );

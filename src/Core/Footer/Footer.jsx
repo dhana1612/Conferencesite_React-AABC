@@ -1,4 +1,5 @@
-import { FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaRegCopyright  } from 'react-icons/fa';
+import {FaInstagram, FaLinkedin, FaYoutube} from 'react-icons/fa';
+import { BsTwitterX } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -21,7 +22,7 @@ const Footer = () => {
           </ul>
           <div className="flex space-x-4 sm:justify-center">
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-green-900 flex justify-center items-center hover:bg-green-700">
-              <FaTwitter className="w-5 h-5 text-white" />
+              <BsTwitterX className="w-5 h-5 text-white" />
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-green-900 flex justify-center items-center hover:bg-green-700">
               <FaInstagram className="w-5 h-5 text-white" />
