@@ -29,57 +29,57 @@ const committeeList = [
   {
     title: "General Co-Chairs",
     members: [
-      "Yongfu Li, Shanghai Jiao Tong University, China",
-      "Weisheng Zhao, Beihang University, China",
-      "Mohd Sawan, Westlake University, China",
+      "Rajesh Kumar, University of Oxford, UK",
+      "Priya Sharma, Indian Institute of Science, India",
+      "Mohammed Al-Farsi, King’s College London, UK",
     ],
   },
   {
     title: "Technical Program Co-Chairs",
     members: [
-      "Chao Wang, Huazhong University of Science and Technology, China",
-      "Xinfei Guo, Shanghai Jiao Tong University, China",
-      "Xinmiao Zhang, Ohio State University, USA",
-      "Antonio Liscidini, University of Toronto, Canada",
-      "Alex James, Digital University Kerala, India",
-      "Arindam Basu, City University of Hong Kong, Hong Kong",
-      "Jae-Sun Seo, Cornell Tech, USA",
+      "James Anderson, University of Cambridge, UK",
+      "Ananya Verma, Indian Institute of Technology Delhi, India",
+      "Ethan Carter, Harvard University, USA",
+      "Lucas Bennett, University of Toronto, Canada",
+      "Arjun Nair, Digital University Kerala, India",
+      "Rohan Mehta, City University of London, UK",
+      "Daniel Kim, Cornell Tech, USA",
     ],
   },
   {
     title: "Financial Co-Chairs",
     members: [
-      "Wei Mao, Xidian University, China",
-      "Kian Ann Ng, Singapore Institute of Technology, Singapore",
+      "Sarah Lewis, University of Edinburgh, UK",
+      "Aditya Patel, National University of Singapore, Singapore",
     ],
   },
   {
     title: "Publicity Co-Chairs",
     members: [
-      "Liang Qi, Shanghai Jiao Tong University, China",
-      "Sijun Du, Delft University of Technology, Netherlands",
+      "Emily White, Imperial College London, UK",
+      "Thomas van Dijk, Delft University of Technology, Netherlands",
     ],
   },
   {
     title: "Local Arrangement Co-Chairs",
     members: [
-      "Deming Zhang, Beihang University, China",
-      "Yueting Li, Beihang University, China",
+      "David Brown, University of Manchester, UK",
+      "Sophia Li, University of Birmingham, UK",
     ],
   },
   {
     title: "DEI Co-Chairs",
     members: [
-      "Yanan Sun, Shanghai Jiao Tong University, China",
-      "Yuhang Zhang, East China Normal University, China",
-      "Yu Wu, University College London, China",
+      "Olivia Taylor, University of Glasgow, UK",
+      "Aarav Singh, University of Delhi, India",
+      "Hannah Chen, University College London, UK",
     ],
   },
   {
     title: "Sponsorship Co-Chairs",
     members: [
-      "Xinsheng Wang, Harbin Institute of Technology, China",
-      "Wenning Jiang, Fudan University, China",
+      "Nathan Scott, University of Bristol, UK",
+      "Wei Zhang, National University of Singapore, Singapore",
     ],
   },
 ];
@@ -104,7 +104,7 @@ const FullCommittee = () => {
         {/* Committee Members Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {committeeMembers.map((member, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg p-6 flex items-center">
+            <div key={index} className="bg-white rounded-lg shadow-lg p-6 flex items-center transition-transform transform hover:scale-105">
               <img src={member.image} alt={member.name} className="w-30 h-30 rounded-full object-cover mr-4" />
               <div>
                 <h3 className="text-lg font-semibold text-green-700">{member.name}</h3>
@@ -134,7 +134,7 @@ const FullCommittee = () => {
         <div className="text-center mt-8">
           <button
             onClick={() => navigate(-1)}
-            className="px-4 py-2 bg-green-700 text-white rounded-sm hover:bg-green-600 text-lg"
+            className="px-4 py-2 bg-green-700 text-white rounded-sm hover:bg-green-600 text-lg transition-transform transform hover:scale-105"
           >
             Back to Home
           </button>

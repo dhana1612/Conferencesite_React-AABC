@@ -7,6 +7,7 @@ import WelcomeMessage from '../Components/Pages/WelcomeMessage'
 import PaperSubmission from '../Components/Pages/PaperSubmission'
 import ScrollToTop from '../Scrolltotop'
 import Contact from '../Components/Pages/Conrtact'
+import RegistrationDetails from '../Components/Pages/RegistrationDetail'
 
 export default function AppRouter() {
   return (
@@ -19,6 +20,7 @@ export default function AppRouter() {
             <Route path="/paper-submit" element={<PaperSubmission />} />
             <Route path="/welcome-message" element={<WelcomeMessage />} />
             <Route path="/full-committee" element={<FullCommittee />} />
+            <Route path="/registration" element={<RegistrationDetails />} />
             <Route path="/contact" element={<Contact />} />
           </Route>
         </Routes>

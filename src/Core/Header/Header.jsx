@@ -138,7 +138,7 @@ export default function Header() {
 
           {/* Registration Button */}
           <Link
-            to="/registration"
+            to="/paper-submit"
             className="border border-white px-6 py-2 rounded-full hover:bg-green-300 transition text-lg"
           >
             Registration
@@ -164,6 +164,7 @@ export default function Header() {
             <Link
               to="/"
               className="hover:text-gray-300 transition text-lg"
+              onClick={() => setMenuOpen(false)}
             >
               Home
             </Link>
@@ -177,12 +178,28 @@ export default function Header() {
                 About <ChevronDown className="ml-1 w-4 h-4" />
               </button>
               {dropdownOpen === "About" && (
-                <ul className="absolute left-0 mt-2 bg-white text-black shadow-md rounded-md py-2 w-64">
+                <ul className="absolute left-[-50%] mt-2 bg-white text-black shadow-md rounded-md py-2 w-64 z-50">
                   <li className="px-4 py-2 hover:bg-gray-200">
-                    <Link to="/welcome-message">Welcome Message</Link>
+                    <Link
+                      to="/welcome-message"
+                      onClick={() => {
+                        setDropdownOpen(null); // Close dropdown
+                        setMenuOpen(false); // Close mobile menu
+                      }}
+                    >
+                      Welcome Message
+                    </Link>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-200">
-                    <Link to="/full-committee">Organizing Committee</Link>
+                    <Link
+                      to="/full-committee"
+                      onClick={() => {
+                        setDropdownOpen(null); // Close dropdown
+                        setMenuOpen(false); // Close mobile menu
+                      }}
+                    >
+                      Organizing Committee
+                    </Link>
                   </li>
                 </ul>
               )}
@@ -197,12 +214,28 @@ export default function Header() {
                 Authors <ChevronDown className="ml-1 w-4 h-4" />
               </button>
               {dropdownOpen === "Authors" && (
-                <ul className="absolute left-0 mt-2 bg-white text-black shadow-md rounded-md py-2 w-64">
+                <ul className="absolute left-[-50%] mt-2 bg-white text-black shadow-md rounded-md py-2 w-64 z-50">
                   <li className="px-4 py-2 hover:bg-gray-200">
-                    <Link to="/registration">Registration Details</Link>
+                    <Link
+                      to="/registration"
+                      onClick={() => {
+                        setDropdownOpen(null); // Close dropdown
+                        setMenuOpen(false); // Close mobile menu
+                      }}
+                    >
+                      Registration Details
+                    </Link>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-200">
-                    <Link to="/paper-submit">Paper Submission</Link>
+                    <Link
+                      to="/paper-submit"
+                      onClick={() => {
+                        setDropdownOpen(null); // Close dropdown
+                        setMenuOpen(false); // Close mobile menu
+                      }}
+                    >
+                      Paper Submission
+                    </Link>
                   </li>
                 </ul>
               )}
@@ -212,6 +245,7 @@ export default function Header() {
             <Link
               to="/contact"
               className="hover:text-gray-300 transition text-lg"
+              onClick={() => setMenuOpen(false)}
             >
               Contact
             </Link>
@@ -219,8 +253,9 @@ export default function Header() {
 
           {/* Registration Button (Mobile) */}
           <Link
-            to="/registration"
+            to="/paper-submit"
             className="mt-6 border border-white px-6 py-2 rounded-full hover:bg-green-300 transition"
+            onClick={() => setMenuOpen(false)}
           >
             Registration
           </Link>

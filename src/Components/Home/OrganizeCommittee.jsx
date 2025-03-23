@@ -42,7 +42,7 @@ const OrganizingCommittee = () => {
           {committeeMembers.map((member, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-lg p-6 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left"
+              className="bg-white rounded-lg shadow-lg p-6 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left transition-transform transform hover:scale-105"
             >
               <img
                 src={member.image}

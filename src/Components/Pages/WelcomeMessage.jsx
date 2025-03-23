@@ -5,7 +5,7 @@ const WelcomeMessage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-gray-100 min-h-screen py-12">
+    <div className="bg-gray-100 min-h-screen py-10">
       <div className="w-full lg:w-[65%] mx-auto px-4">
         {/* Breadcrumb Navigation */}
         <nav className="text-green-600 mb-4">
@@ -57,7 +57,7 @@ const WelcomeMessage = () => {
         <div className="text-center mt-8">
           <button
             onClick={() => navigate(-1)}
-            className="px-4 py-2 bg-green-700 text-lg text-white rounded-sm hover:bg-green-600"
+            className="px-4 py-2 bg-green-700 text-lg text-white rounded-sm hover:bg-green-600 transition-transform transform hover:scale-105"
           >
             Back to Home
           </button>
