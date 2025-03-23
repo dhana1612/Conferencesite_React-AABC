@@ -15,7 +15,7 @@ export default function Contact() {
         {/* Card Section */}
         <div className="grid md:grid-cols-2 gap-8 mt-8">
           {/* Left Section */}
-          <div className="border-t-4 border-b-4 border-green-500 p-6 shadow-md rounded-md">
+          <div className="border-t-4 border-b-4 border-green-500 p-6 shadow-md rounded-md bg-white">
             <div className="mb-4">
               <h3 className="text-xl font-semibold text-green-700 flex items-center">
                 <Globe className="mr-2 text-green-500" /> About Arrow Thought
@@ -53,7 +53,7 @@ export default function Contact() {
           </div>
 
           {/* Right Section */}
-          <div className="border-t-4 border-b-4 border-green-500 p-6 shadow-md rounded-md">
+          <div className="border-t-4 border-b-4 border-green-500 p-6 shadow-md rounded-md bg-white">
             <div className="mb-4">
               <h3 className="text-xl font-semibold text-green-700 flex items-center">
                 <Globe className="mr-2 text-green-500" /> Visa Requirement
