@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, Globe } from "lucide-react";
 export default function Contact() {
   return (
     <section className="bg-gray-100" id="contact">
-      <div className=" py-17 px-6 md:px-20 mx-auto w-full xl:w-[90%] 2xl:w-[65%] sm:px-6 lg:px-8">
+      <div className=" py-17 px-6 md:px-6 mx-auto w-full xl:w-[90%] 2xl:w-[65%] sm:px-6 lg:px-8">
         {/* Heading with Underline */}
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl font-semibold text-green-700 mb-4">
@@ -20,7 +20,7 @@ export default function Contact() {
               <h3 className="text-xl font-semibold text-green-700 flex items-center">
                 <Globe className="mr-2 text-green-500" /> About Arrow Thought
               </h3>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 The Hyatt Regency brand is a global collection of hotels and resorts found in more
                 than 200 locations across 40+ countries. A place where everyone is welcome and anything is possible.
               </p>
@@ -58,7 +58,7 @@ export default function Contact() {
               <h3 className="text-xl font-semibold text-green-700 flex items-center">
                 <Globe className="mr-2 text-green-500" /> Visa Requirement
               </h3>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 Multiple policies help foreigners enter China. If your country is in the
                 <a href="#" className="text-green-500 font-semibold"> list of agreements</a> for visa exemption,
                 you don't need a visa. Otherwise, check <a href="#" className="text-green-500 font-semibold">this link</a>.

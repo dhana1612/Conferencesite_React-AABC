@@ -6,7 +6,7 @@ export default function HeroSection() {
 
   return (
     <section className="bg-[#528F62] px-5 h-full">
-      <div className="max-w-7xl mx-auto flex flex-col items-center py-10">
+      <div className="w-full xl:w-[85%] 2xl:w-[65%] mx-auto flex flex-col items-center py-10">
         {/* Main Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="text-center lg:text-left">
@@ -25,9 +25,9 @@ export default function HeroSection() {
           </div>
           <div className="flex justify-center">
             <img
-              src="https://2025.ieee-isicas.org/Hyatt-Regency.jpg"
+              src="/img/tok2.jpg"
               alt="Venue"
-              className="rounded-lg w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-cover"
+              className="rounded-lg w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-cover xl:max-w-xl 2xl:max-w-2xl"
             />
           </div>
         </div>
@@ -35,9 +35,9 @@ export default function HeroSection() {
         {/* Image Gallery */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 pt-10 w-full px-4">
           {[
-            "https://2025.ieee-isicas.org/Hyatt-Regency.jpg",
-            "https://2025.ieee-isicas.org/Hyatt-Regency2.webp",
-            "https://2025.ieee-isicas.org/Hyatt-Regency3.webp",
+            "/img/tok4.jpg",
+            "/img/tok1.jpg",
+            "/img/tok3.jpg",
           ].map((src, index) => (
             <img
               key={index}
