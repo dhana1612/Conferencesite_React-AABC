@@ -21,11 +21,11 @@ const WelcomeMessage = () => {
         </h2>
 
         {/* Message Box */}
-        <div className="bg-white rounded-lg shadow-lg p-6 text-lg">
+        <div className="bg-white rounded-lg shadow-lg p-6 text-lg text-justify">
           <p className="text-gray-700 leading-7 mb-4">
             Dear <span className="font-semibold">Colleagues and Friends</span>,
           </p>
-          <p className="text-gray-700 leading-7 mb-4">
+          <p className="text-gray-700 leading-7 mb-4 text-justify">
             We are pleased to invite you to the <span className="font-semibold">2025 International Conference on Advances in AI, Business Analytics, and Cloud Systems (AABC 2025)</span>. This prestigious event will take place from <span className="font-semibold">November 15th to 17th, 2025</span>, at the <span className="font-semibold">Grand Marina Bay Hotel</span> in the dynamic city of <span className="font-semibold">Singapore</span>.
           </p>
           <p className="text-gray-700 leading-7 mb-4">
